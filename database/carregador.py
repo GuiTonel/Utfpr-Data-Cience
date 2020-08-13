@@ -1,0 +1,3 @@
+class Carregador():
+    def initDatabase():
+        
