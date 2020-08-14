@@ -36,7 +36,6 @@ def createDatabase( cursor, db ):
     )
 
     db.commit()
-    return cursor
 
 db = connectDatabase()
 cursor = db.cursor()
