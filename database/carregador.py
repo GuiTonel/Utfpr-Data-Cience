@@ -7,7 +7,7 @@ import criador as criador
 usuario = "csk"
 senha = "csk123"
 
-filePath = 'archives/covid19_casos_brasil.csv'
+filePath = 'archives/dados_covid.cvs'
 
 db = criador.connectDatabase()
 cursor = db.cursor()
