@@ -7,7 +7,7 @@ import criador as criador
 usuario = "csk"
 senha = "csk123"
 
-filePath = 'archives/dados_covid.cvs'
+filePath = 'archives/dados_covid.csv'
 
 db = criador.connectDatabase()
 cursor = db.cursor()
@@ -31,6 +31,7 @@ for index, cidade in cidades.iterrows():
             }
         )
     except Exception as err:
+        print("Falha ao executar insert!")
         print(err)
 
 dadosCovid = dadosCovid.sort_values( 'city' )
@@ -50,6 +51,7 @@ for index, casos in dadosCovid.iterrows():
             }
         )
     except Exception as err:
+        print("Falha ao executar insert!")
         print(err)
 
 db.commit()
