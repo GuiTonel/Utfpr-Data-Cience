@@ -38,8 +38,8 @@ def createDatabase( cursor, db ):
     db.commit()
 
 db = connectDatabase()
-cursor = db.cursor()
 
+cursor = db.cursor()
 createDatabase( cursor, db )
 
 cursor.close()
